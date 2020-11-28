@@ -1,0 +1,48 @@
+window:
+  dimensions:
+    columns: 140
+    lines: 40
+  padding:
+    x: 15
+    y: 15
+
+background_opacity: 1.0
+
+font:
+  size: 15.0
+  normal:
+    family: "Menlo"
+  bold:
+    family: "Menlo"
+  italic:
+    family: "Menlo"
+  bold_italic:
+    family: "Menlo"
+
+colors:
+  # Default colors
+  primary:
+    background: "0x000000"
+    foreground: "0xffffff"
+
+  # Normal colors
+  normal:
+    black: "0x161616"
+    red: "0xfd4242"
+    green: "0xa6e22d"
+    yellow: "0xfff100"
+    blue: "0x005ffe"
+    magenta: "0xfc3ef9"
+    cyan: "0x00c2f0"
+    white: "0xfefefe"
+
+  # Bright colors
+  bright:
+    black: "0x959595"
+    red: "0xfa7fac"
+    green: "0xbde271"
+    yellow: "0xfff27f"
+    blue: "0x49a4f8"
+    magenta: "0xf73ef7"
+    cyan: "0x5ed6fe"
+    white: "0xfeffff"
