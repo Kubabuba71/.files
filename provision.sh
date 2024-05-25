@@ -18,6 +18,18 @@ if [[ -f "$HOME/.config/nvim/init.lua" ]]; then
 	echo "$HOME/.config/nvim/init.lua already exists, skipping it"
 else
 	echo "Copying nvim/init.lua to $HOME/.config/nvim/init.lua"
-	cp  nvim/init.lua $HOME/.config/nvim/
+	cp  nvim/init.lua $HOME/.config/nvim/init.lua
 fi
 
+if [[ -d "$HOME/.config/atuin" ]]; then 
+	echo "Directory $HOME/.config/atuin already exists, skipping it"
+else
+	mkdir "$HOME/.config/atuin/"
+fi
+
+if [[ -f "$HOME/.config/atuin/config.toml" ]]; then
+	echo "$HOME/.config/atuin/config.toml already exists, skipping it"
+else
+	echo "Copying atuin/config.toml to $HOME/.config/atuin/config.toml"
+	cp atuin/config.toml $HOME/.config/atuin/config.toml
+fi
