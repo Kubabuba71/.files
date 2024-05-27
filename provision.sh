@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 
 if [[ -f "$HOME/.gitconfig" ]]; then
@@ -32,4 +32,18 @@ if [[ -f "$HOME/.config/atuin/config.toml" ]]; then
 else
 	echo "Copying atuin/config.toml to $HOME/.config/atuin/config.toml"
 	cp atuin/config.toml $HOME/.config/atuin/config.toml
+fi
+
+if [[ -d "$HOME/.config/gitui" ]]; then 
+	echo "Directory $HOME/.config/gitui already exists, skipping it"
+else
+	echo "Copying atuin/config.toml to $HOME/.config/atuin/config.toml"
+	mkdir "$HOME/.config/gitui/"
+fi
+
+if [[ -f "$HOME/.config/gitui/theme.ron" ]]; then
+	echo "$HOME/.config/gitui/theme.ron already exists, skipping it"
+else
+	echo "Copying gitui/theme.ron to $HOME/.config/gitui/theme.ron"
+	cp gitui/theme.ron $HOME/.config/gitui/theme.ron
 fi
