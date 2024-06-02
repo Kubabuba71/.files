@@ -21,3 +21,6 @@ mkdir -p $HOME/.config/wezterm/
 cp -R wezterm/ $HOME/.config/wezterm/
 cp .wezterm.lua $HOME/.wezterm.lua
 
+# tmux
+git -C $HOME/.tmux-themepack/ pull || git clone https://github.com/jimeh/tmux-themepack.git $HOME/.tmux-themepack
+cp .tmux.conf $HOME/.tmux.conf

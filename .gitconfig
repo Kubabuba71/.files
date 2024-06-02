@@ -14,4 +14,4 @@
     st = !"git status"
 
 [core]
-    editor = "vim"
+    editor = "nvim"
